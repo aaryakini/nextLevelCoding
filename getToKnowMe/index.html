@@ -3,21 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="getToKnowMe.css">
-	<title>Get To Know Me Game</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+	<title>Hello!</title>
 </head>
-
 <body>
-	<div class="tooltip">
-		<button class="tooltipitem" id="flowerImage" onclick="showHide('flower')">
-			<!-- <img src="assets/flower.png"> -->
-		</button>
-	</div>
-	<div class="tooltipframe display" id="flower" >
-		<!-- <img src="assets/images/hart.jpeg"> -->
-		<p>My favourite flower is cherry blossom.</p>
-	</div>
+	<p id="title">Hello!<br>Get To Know Aarya!</p>
+	
+	<p id="copy">My name is Aarya, and I've created a little game for you to get to know me! Click the button below to start playing and learn some fun facts about me :)</p>
 
-	<script type="text/javascript" src="getToKnowMe.js"></script>
+	<a href="getToKnowMe.html"><div id="go" onclick="showHide('instructions')">
+		<p>play the game</p>
+	</div></a>
+
 </body>
 </html>

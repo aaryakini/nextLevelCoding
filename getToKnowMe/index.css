@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Hanalei+Fill&family=Rubik+Puddles&family=Silkscreen&display=swap');
+
+body{
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#title{
+	font-family: 'Silkscreen', cursive;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: -8px;
+	color: #d729ff;
+	margin-bottom: 0px;
+}
+
+#copy{
+	width: 500px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 0px;
+}
+
+#go p{
+	padding: 10px 20px;
+	background-color: black;
+	color: #f1d9ff;
+	border: 5px solid #f1d9ff;
+	border-radius: 50px;
+	font-family: 'Silkscreen', cursive;
+	font-size: 18px;
+}
+
+a{
+	text-decoration: none;
+}

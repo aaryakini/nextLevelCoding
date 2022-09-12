@@ -1,9 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Hanalei+Fill&family=Rubik+Puddles&family=Silkscreen&display=swap');
+
 body{
-	background-color: beige;
+	background-color: white;
 	width: 100vw;
 	height: 100vh;
+	box-sizing: border-box;
 }
 
 img{
 	width: 100px;
+}
+
+.tooltipframe{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	width: 220px;
+	padding: 17px 17px 12px 17px;
+	text-align: center;
+	align-items: center;
+	color: #d729ff;
+	background-color: white;
+	border: solid #d729ff 3px;
+	border-radius: 30px;
+	z-index: 100;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.display{
+	display: none;
+}
+
+.footer{
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+	z-index: 10000;
+}
+
+.footer p{
+	padding: 10px 20px;
+	background-color: black;
+	color: #f1d9ff;
+	border: 5px solid #f1d9ff;
+	border-radius: 50px;
+	font-family: 'Silkscreen', cursive;
+	font-size: 18px;
+}
+
+.instructionTooltip{
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	z-index: 10000;
+}
+
+.instructionTooltip p{
+	padding: 10px 20px;
+	background-color: black;
+	color: #f1d9ff;
+	border: 5px solid #f1d9ff;
+	border-radius: 50px;
+	font-family: 'Silkscreen', cursive;
+	font-size: 18px;
+}
+
+.instructionFrame{
+	position: relative;
+	top: 80px;
+	left: 15px;
+	width: 250px;
+	padding: 12px 17px;
+	text-align: center;
+	align-items: center;
+	background-color: white;
+	border: solid black 3px;
+	border-radius: 30px;
+	z-index: 100;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+#title{
+	font-family: 'Silkscreen', cursive;
+	font-size: 18px;
+}
+
+.tooltipImage{
+	width: 200px;
+	border-radius: 30px;
+}
+
+#spotlight {
+	display: block;
+	position: fixed;
+	opacity: 100%;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 99;
 }
