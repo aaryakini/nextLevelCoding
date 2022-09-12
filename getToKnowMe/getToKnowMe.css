@@ -29,6 +29,10 @@ img{
 	line-height: 16px;
 }
 
+.tooltipframe:hover{
+	cursor: url('assets/cursor.png'), auto;
+}
+
 .display{
 	display: none;
 }
@@ -39,6 +43,7 @@ img{
 	bottom: 5px;
 	z-index: 10000;
 }
+
 
 .footer p{
 	padding: 10px 20px;
@@ -55,6 +60,10 @@ img{
 	left: 20px;
 	top: 5px;
 	z-index: 10000;
+}
+
+.instructionTooltip:hover{
+	cursor: url('assets/cursor.png'), auto;
 }
 
 .instructionTooltip p{
@@ -82,6 +91,10 @@ img{
 	font-family: 'DM Sans', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
+}
+
+.instructionFrame:hover{
+	cursor: url('assets/cursor.png'), auto;
 }
 
 #title{
