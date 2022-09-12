@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+body{
+	background-image: url("assets/comp.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 100px;
+	color: white;
+}
+
+a:hover{
+	filter: drop-shadow(0px 0px 20px white);
+}
