@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=DM+Sans:ital@0;1&family=Lacquer&display=swap');
 
 body{
 	background-image: url("assets/comp.gif");
@@ -8,11 +8,38 @@ body{
 
 a{
 	text-decoration: none;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 100px;
-	color: white;
+	font-family: 'Anybody', cursive;
+	font-size: 120px;
+	color: whitesmoke;
 }
 
 a:hover{
-	filter: drop-shadow(0px 0px 20px white);
+	filter: drop-shadow(0px 0px 20px deeppink);
+}
+
+.footer{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+}
+
+.footer a{
+	text-decoration: none;
+	font-family: 'Anybody', cursive;
+	font-size: 20px;
+	color: whitesmoke;
+}
+
+.footer li:hover{
+	background-color: whitesmoke;
+}
+
+.footer li{
+	list-style: none;
+	padding: 7px;
+	border: 2px solid white;
+	margin-bottom: 5px;
 }
