@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+
+canvas{
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#content{
+	/*background: blueviolet;*/
+	width: 600px;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	line-height: 28px;
+	margin: auto;
+	position: relative;
+	z-index: 2;
+}
+
+#content h1{
+	font-family: 'Neuton', serif;
+	font-size: 60px;
+	line-height: 60px;
+}
