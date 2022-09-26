@@ -4,15 +4,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+        <script type="text/javascript" src="index.js"></script>
         <title>There's a Better Way to Reclaim Your Time Than Quiet Quitting</title>
     </head>
 
     <body>
-        <div id="content">
+        <div class="header">
 
-            <h1>There's a Better Way to Reclaim Your Time Than Quiet Quitting</h1>
-    
-            <p>By Laura Vanderkam</p>
+            <div class="title">
+                <div class="text">
+                    <h1>There's a Better Way to Reclaim Your Time Than Quiet Quitting</h1>
+
+                     <p>By Laura Vanderkam</p>
+                </div>
+            </div>
+
+            <div class="calendar">
+                <div class="outer">
+                  
+                    <div class="day" id="sun" onmouseover="makeEvent('sun')">
+                        <div class="head">
+                        <p>S</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="mon" onmouseover="makeEvent('mon')">
+                        <div class="head">
+                        <p>M</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="tue" onmouseover="makeEvent('tue')">
+                        <div class="head">
+                        <p>T</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="wed" onmouseover="makeEvent('wed')">
+                        <div class="head">
+                        <p>W</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="thu" onmouseover="makeEvent('thu')">
+                        <div class="head">
+                        <p>T</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="fri" onmouseover="makeEvent('fri')">
+                        <div class="head">
+                        <p>F</p>
+                        </div>
+                    </div>
+
+                    <div class="day" id="sat" onmouseover="makeEvent('sat')">
+                        <div class="head">
+                        <p>S</p>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="content">
     
             <p>This summer, there was much discussion of the concept of “<a class="link" href="https://www.nytimes.com/2022/08/23/style/quiet-quitting-tiktok.html">quiet quitting</a>” — meaning, essentially, doing the bare minimum at work. And perhaps that’s not surprising: After more than two years of pandemic uncertainty, employee stress levels are at <a class="link" href="https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx#ite-393248">all-time highs</a>, and people are <a class="link" href="https://www.nytimes.com/2021/04/19/well/mind/covid-mental-health-languishing.html">still languishing</a>. When you’re exhausted and overwhelmed, it feels like something needs to give — and for many, that seems to be the pursuit of excellence at work.</p>
     

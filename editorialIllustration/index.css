@@ -2,18 +2,103 @@
 
 body{
 	background: white;
+	padding: 0px;
+	margin:  0px;
+	box-sizing: border-box;
+}
+
+.header{
+	background: black;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.title{
+	width: 45%;
+}
+
+.text{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	font-family: 'Neuton', serif;
+	font-size: 60px;
+	line-height: 60px;
+	color: white;
+	margin: 0px 80px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.title p{
+	font-family: 'Neuton', serif;
+	font-size: 30px;
+	line-height: 60px;
+	color: white;
+	margin: 10px 80px;
+}
+
+.calendar{
+	width: 55%;
+}
+
+.outer{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 525px;
+  height: 525px;
+  background: white;
+  border: 5px solid white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.day{
+  width: 73px;
+  border-right: 2px solid white;
+  z-index: 3;
+  display: block;
+/*   flex-flow: column nowrap; */
+}
+
+.head{
+  width: 74px;
+  height: 74px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  background: black;
+  position: relative;
+  z-index: 200000;
+}
+
+.head p{
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 30px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
 }
 
 #content{
-	/*background: blueviolet;*/
 	width: 600px;
 	font-family: 'Georgia', serif;
 	font-size: 20px;
 	line-height: 28px;
-	margin: auto;
+	margin: 100px auto;
 	z-index: 3;
+
 }
 
 #content h1{
