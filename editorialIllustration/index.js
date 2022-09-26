@@ -15,6 +15,8 @@ function makeEvent(name){
     newDiv.style.height = makeRandomSize(min, max) + "px";
     newDiv.style.position = "absolute";
     newDiv.style.top = event.clientY + "px"; //this is causing PROBLEMS!!!!!!!!
+    newDiv.style.filter = `drop-shadow(0px 0px 5px #D333FF)`;
+    newDiv.style.borderRadius = "6px"
     newDiv.style.transform = `translateY(-50%)`;
     newDiv.style.background = `hsla(${Math.random()*360}, 100%, 60%, 60%)`;
     activeDay.appendChild(newDiv); //how to append at a specific position?
