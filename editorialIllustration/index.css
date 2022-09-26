@@ -16,6 +16,9 @@ body{
 }
 .title{
 	width: 45%;
+	font-family: 'Neuton', serif;
+	line-height: 60px;
+	color: white;
 }
 
 .text{
@@ -26,21 +29,15 @@ body{
 }
 
 .title h1{
-	font-family: 'Neuton', serif;
 	font-size: 60px;
-	line-height: 60px;
-	color: white;
-	margin: 0px 80px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+	margin: 0px 10px;
+	margin-left: 100px;
 }
 
 .title p{
-	font-family: 'Neuton', serif;
 	font-size: 30px;
-	line-height: 60px;
-	color: white;
-	margin: 10px 80px;
+	margin: 0px 40px;
+	margin-left: 100px;
 }
 
 .calendar{

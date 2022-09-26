@@ -14,11 +14,10 @@ function makeEvent(name){
     newDiv.style.width = "73px";
     newDiv.style.height = makeRandomSize(min, max) + "px";
     newDiv.style.position = "absolute";
-    // newDiv.style.left = event.clientX + "px";
-    newDiv.style.top = event.clientY + "px";
-    // newDiv.style.transform = `translateY(-50%)`;
+    newDiv.style.top = event.clientY + "px"; //this is causing PROBLEMS!!!!!!!!
+    newDiv.style.transform = `translateY(-50%)`;
     newDiv.style.background = `hsla(${Math.random()*360}, 100%, 60%, 60%)`;
-    activeDay.appendChild(newDiv);
+    activeDay.appendChild(newDiv); //how to append at a specific position?
     z = z + 1;
   }
 }
