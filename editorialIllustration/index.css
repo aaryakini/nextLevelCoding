@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
 
+@font-face {
+  font-family: 'ITC Cheltenham Std Light Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/cheltenham/CheltenhamStdLightCond.woff) format("woff");
+}
+
+@font-face {
+	font-family: 'ITC Cheltenham Std Book';
+	font-style: normal;
+	font-weight: normal;
+	src: url(assets/fonts/cheltenham/CheltenhamStdBook.woff) format("woff");
+}
+
 body{
 	background: white;
 	padding: 0px;
@@ -14,11 +28,15 @@ body{
 	display: flex;
 	flex-flow: row nowrap;
 }
+
 .title{
 	width: 45%;
-	font-family: 'Neuton', serif;
+	font-family: 'ITC Cheltenham Std Light Condensed', serif;
 	line-height: 60px;
 	color: white;
+	/*background-color: pink;*/
+	text-align: center;
+	align-items: center;
 }
 
 .text{
@@ -35,9 +53,26 @@ body{
 }
 
 .title p{
-	font-size: 30px;
+	font-size: 25px;
 	margin: 0px 40px;
+	margin-bottom: -20px;
 	margin-left: 100px;
+}
+
+/*#op{
+	color: #d52832;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+}*/
+
+.top{
+	margin-bottom: 50px;
+}
+
+.top p{
+	font-family: 'ITC Cheltenham Std Book', serif;
+	font-size: 18px;
+	margin-bottom: -35px;
 }
 
 .calendar{
@@ -56,6 +91,8 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  filter: drop-shadow(0px 0px 10px white);
+  border-radius: 10px;
 }
 
 .day{
@@ -67,6 +104,11 @@ body{
 	/*   flex-flow: column nowrap; */
 }
 
+.freeDay{
+	background-color: #ffffff;
+	background-image: url("assets/hearts.svg");
+}
+
 .head{
   width: 74px;
   height: 74px;
@@ -75,6 +117,7 @@ body{
   background: black;
   position: relative;
   z-index: 200000;
+  border-radius: 6px;
 }
 
 .head p{
@@ -87,6 +130,7 @@ body{
   top: 50%;
   transform: translateY(-50%);
   color: white;
+  filter: drop-shadow(0px 0px 15px white);
 }
 
 #content{
@@ -103,4 +147,15 @@ body{
 	font-family: 'Neuton', serif;
 	font-size: 60px;
 	line-height: 60px;
+}
+
+a{
+	color: #3b6e94;
+	text-decoration-thickness: 1.5px;
+	text-decoration-color: #dde6ec;
+}
+
+a:hover{
+	color: #3b6e94;
+	text-decoration-color: #3b6e94;
 }

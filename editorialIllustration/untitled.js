@@ -5,7 +5,6 @@ let min = 50;
 let days = document.getElementsByClassName("day");
 console.log(days);
 let free = Math.floor(Math.random() * days.length);
-days[free].classList.add("freeDay");
 console.log(days[free].id);
 
 function makeEvent(name){
