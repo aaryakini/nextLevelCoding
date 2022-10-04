@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
 
 body{
-	background-image: url("assets/comp.gif");
+	/*background-image: url("assets/comp1.gif");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	background-color: white;
 }
 
 .content a{
 	text-decoration: none;
-	font-family: 'Anybody', cursive;
+	font-family: 'Inter Tight', sans-serif;
+	letter-spacing: -8px;
 	font-size: 120px;
-	color: whitesmoke;
+	line-height: 120px;
+	color: black;
 }
 
 .content a:hover{
-	filter: drop-shadow(0px 0px 20px deeppink);
+	filter: invert(100%);
 }
 
 .footer{
@@ -28,18 +31,19 @@ body{
 
 .footer a{
 	text-decoration: none;
-	font-family: 'Anybody', cursive;
+	font-family: 'Inter Tight', sans-serif;
+	text-transform: uppercase;
 	font-size: 20px;
-	color: whitesmoke;
+	color: black;
 }
 
 .footer li:hover{
-	background-color: whitesmoke;
+	background-color: black;
 }
 
 .footer li{
 	list-style: none;
-	padding: 7px;
-	border: 2px solid white;
+	padding: 7px 15px;
+	border: 2px solid black;
 	margin-bottom: 5px;
 }

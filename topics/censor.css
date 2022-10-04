@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap');
+
+@font-face {
+  font-family: 'ITC Cheltenham Std Light Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/cheltenham/CheltenhamStdLightCond.woff) format("woff");
+}
+
+@font-face {
+	font-family: 'ITC Cheltenham Std Book';
+	font-style: normal;
+	font-weight: normal;
+	src: url(assets/fonts/cheltenham/CheltenhamStdBook.woff) format("woff");
+}
+
+body{
+	background: white;
+	padding: 0px;
+	margin:  0px;
+	box-sizing: border-box;
+}
+
+.header{
+	background: black;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.title{
+	width: 50%;
+	font-family: 'ITC Cheltenham Std Light Condensed', serif;
+	line-height: 60px;
+	color: white;
+	text-align: center;
+	align-items: center;
+}
+
+.text{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	font-size: 60px;
+	margin: 0px 10px;
+	margin-left: 100px;
+}
+
+.title p{
+	font-size: 25px;
+	margin: 0px 40px;
+	margin-bottom: -20px;
+	margin-left: 100px;
+}
+
+/*#op{
+	color: #d52832;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+}*/
+
+.top{
+	margin-bottom: 50px;
+}
+
+.top p{
+	font-family: 'ITC Cheltenham Std Book', serif;
+	font-size: 18px;
+	margin-bottom: -35px;
+}
+
+.image{
+	width: 50;
+}
+
+img{
+	position: relative;
+	height: 100vh;
+}
+
+#content{
+	width: 600px;
+	margin: 100px auto;
+	z-index: 3;
+
+}
+
+#content p{
+	font-family: 'Georgia', serif;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+#content h2{
+	font-family:'ITC Cheltenham Std Light Condensed', serif;
+	line-height: 40px;
+	font-size: 40px;
+	padding-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+a{
+	color: #3b6e94;
+	text-decoration-thickness: 1.5px;
+	text-decoration-color: #dde6ec;
+}
+
+a:hover{
+	color: #3b6e94;
+	text-decoration-color: #3b6e94;
+}
+
+::-moz-selection {
+  background-color: black;
+  color: #000001;
+}
+::selection  {
+  background-color: black;
+  color: #000001;
+}
+::-webkit-selection {
+  background-color: black;
+  color: #000001;
+}
