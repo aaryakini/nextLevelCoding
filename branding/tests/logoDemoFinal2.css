@@ -1,0 +1,173 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0vw;
+  padding: 0vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hor{
+  position: absolute;
+  height: 4.48430vw;
+  background: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0.8968609865vw;
+}
+
+.ver{
+  position: absolute;
+  width: 4.48430vw;
+  background: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0.8968609865vw;
+}
+
+.space{
+  position: absolute;
+  width: 4.48430vw;
+  height: 31.39013453vw;
+  background: white;
+  margin: 0.8968609865vw;
+}
+
+.content{
+  width: 100vw;
+  height: 100vh;
+  background: royalblue;
+}
+
+#s1{
+  left: 26.00896861vw;
+}
+
+#s2{
+  left: 56.50224215vw;
+}
+
+#s3{
+  left: 86.09865471vw;
+}
+
+#s4{
+  left: 116.5919283vw;
+}
+
+.innerDiv{
+  background: black;
+}
+
+#w1{
+  height: 31.39013453vw;
+}
+
+#w2{
+  top: 21.52466368vw;
+  left: 5.381165919vw;
+  width: 15.24663677vw;
+}
+
+#w3{
+  top: 16.14349776vw;
+  left: 10.76233184vw;
+  width: 4.484304933vw;
+}
+
+#w4{
+  left: 21.52466368vw;
+  height: 31.39013453vw;
+}
+
+
+#i1{
+  left: 30.49327354vw;
+  width: 26.00896861vw;
+}
+
+#i2{
+  top: 5.381165919vw;
+  left: 41.25560538vw;
+  height: 20.62780269vw;
+}
+
+#i3{
+  top: 26.9058296vw;
+  left: 30.49327354vw;
+  width: 26.00896861vw;
+}
+
+#r1{
+  left: 60.98654709vw;
+  height: 31.39013453vw;
+}
+
+#r2{
+  left: 66.367713vw;
+  width: 15.24663677vw;
+}
+
+#r3{
+  top: 5.381165919vw;
+  left: 81.61434978vw;
+  height: 4.48430vw;
+}
+
+#r4{
+  top: 10.76233184vw;
+  left: 66.367713vw;
+  width: 15.24663677vw;
+}
+
+#r5{
+  top: 16.14349776vw;
+  left: 81.61434978vw;
+  height: 15.24663677vw;
+}
+
+#e1{
+  left: 90.58295964vw;
+  height: 31.39013453vw;
+}
+
+#e2{
+  left: 95.96412556vw;
+  width: 20.62780269vw;
+}
+
+#e3{
+  top: 10.76233184vw;
+  left: 95.96412556vw;
+  width: 15.24663677vw;
+}
+
+#e4{
+  top: 26.9058296vw;
+  left: 95.96412556vw;
+  width: 20.62780269vw;
+}
+
+#d1{
+  left: 121.0762332vw;
+  height: 31.39013453vw;
+}
+
+#d2{
+  left: 126.4573991vw;
+  width: 15.24663677vw;
+}
+
+#d3{
+  top: 5.381165919vw;
+  left: 141.7040359vw;
+  height: 20.62780269vw;
+}
+
+#d4{
+  top: 26.9058296vw;
+  left: 126.4573991vw;
+  width: 15.24663677vw;
+}

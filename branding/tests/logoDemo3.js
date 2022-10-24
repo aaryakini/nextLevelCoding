@@ -1,5 +1,8 @@
 let dimensions = [60, 120, 180, 240, 290];
 
+let contentBox = document.getElementById("content");
+console.log("viewport width = " + window.innerWidth);
+
 function drawDivs(){
 	// there needs to be two parts, one for hor and one for ver
 
@@ -15,7 +18,7 @@ function drawDivs(){
 		let width = hors[i].clientWidth;
 
 		maxW = (width - (width%50)) / 50; //maximum number of divs to be broken down
-		let divsToMake = randomNumber(0,maxW);
+		let divsToMake = randomNumber(1,maxW);
 		console.log("divsToMake = " + divsToMake);
 
 		console.log("width = " + width);
@@ -140,7 +143,7 @@ function drawDivs(){
 		let width = vers[i].clientWidth;
 
 		maxH = (height - (height%50)) / 50; //maximum number of divs to be broken down
-		let divsToMake = randomNumber(0,maxH);
+		let divsToMake = randomNumber(1,maxH);
 		console.log("divsToMake = " + divsToMake);
 
 		console.log("width = " + width);
