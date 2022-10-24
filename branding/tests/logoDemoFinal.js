@@ -32,7 +32,7 @@ async function main(){
 		issue = prompt("Enter issue number, between 1 – 12");
 	}while(issue > 12 || issue < 1)
 
-	colophon = apiData.records[issue].fields.colophon;
+	colophon = apiData.records[issue - 1].fields.colophon;
 	console.log("colophon = " + colophon);
 
 	colophoner();
