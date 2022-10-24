@@ -34,7 +34,7 @@ async function main(){
 
 	colophon = apiData.records[issue - 1].fields.colophon;
 	console.log("colophon = " + colophon);
-
+	
 	colophoner();
 
 }

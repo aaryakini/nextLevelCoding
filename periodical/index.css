@@ -14,6 +14,7 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  border-radius: 8px;
 }
 
 .ver{
@@ -23,6 +24,7 @@ body{
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  border-radius: 8px;
 }
 
 .content{
@@ -48,7 +50,7 @@ body{
 
 .innerDiv{
   background: black;
-  border-radius: 4.5px
+  border-radius: 8px;
 }
 
 #w1{
