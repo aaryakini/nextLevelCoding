@@ -91,7 +91,7 @@ function createCanvas() {
 	canvas.style.zIndex = 8;
 	canvas.style.position = "absolute";
 	canvas.style.border = "1px solid";
-	ctx.fillStyle = currentBg;
+	ctx.fillStyle = "white";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	body.appendChild(canvas);
 	console.log("canvas created!");
