@@ -1,0 +1,70 @@
+<!-- inspiration code is here https://codepen.io/yananas/pen/rwvZvY -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yoodle.css">
+	<link rel="icon" type="image" href="assets/favicon.png">
+	<title>yoodle.com</title>
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="colorButton">
+			<p id="first">color</p>
+			<input type="color" id="colorPicker" value="#000000" class="colorpicker">
+		</div>
+		<div class="colorButton">
+			<p>background color</p>
+			<input type="color" value="#ffffff" id="bgColorPicker" class="colorpicker">
+		</div>
+
+		<!-- tools -->
+		<div class="toolsButtons">
+			<!-- <p>tools</p> -->
+			<button id="eraser" class="toolButton">eraser</button>
+			<button id="clear" class="toolButton">clear</button>
+		</div>
+
+		<!-- size -->
+		<div class="buttonSize">
+			<p>size — <span id="showSize"></span></p>
+			<input type="range" min="1" max="100" value="5" step="1" id="controlSize">
+		</div>
+
+		<!-- canvas size -->
+		<div class="canvasSize">
+			<p>canvas</p>
+			<div class="input-group">
+				<span>X</span>
+				<input type="number" id="sizeX" class="form-control sizeBox" placeholder="sizeX" value="500" class="size">
+			</div>
+			<div class="input-group">
+				<span>Y</span>
+				<input type="number" id="sizeY" class="form-control sizeBox" placeholder="sizeY" value="500" class="size">
+			</div>
+
+			<input type="button" value="update" id="canvasUpdate">
+		</div>
+
+		<!-- storage -->
+		<div class="storage">
+			<!-- <p>storage</p> -->
+			<input type="button" value="save" class="btn btn-warning" id="save">
+			<input type="button" value="load" class="btn btn-warning" id="load">
+			<input type="button" value="clear cache" class="btn btn-warning" id="clearCache">
+			<a id="saveToImage">download</a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>yoodle.com</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+	<script type="text/javascript" src="yoodle.js"></script>
+</body>
+</html>

@@ -24,8 +24,9 @@ async function getData(url){
 //but await can only exist in async functions
 async function main(){
 	apiData = await getData(apiUrl);
-	console.log(apiData);
+	// console.log(apiData);
 
+	//first select the colophon number
 	let issue = "";
 
 	do{
@@ -34,6 +35,8 @@ async function main(){
 
 	colophon = apiData.records[issue - 1].fields.colophon;
 	console.log("colophon = " + colophon);
+
+	// colophon = 22;
 	
 	colophoner();
 
@@ -59,12 +62,11 @@ let dMax = 16;
 let wiredMin = 20;
 let wiredMax = 79;
 
+//to add extra boxes
+// let extra = wiredMax - colophon;
+//choose position for e
+
 main();
-
-//first select the colophon number
-// let colophon = 30;
-
-
 
 //divide the colophon amount into each letter
 
@@ -91,7 +93,6 @@ function colophoner(){
 					boxes[i].style.top = 0 + "vw";
 				}
 				boxes[i].style.background = "black";
-				console.log("im here!");
 			}
 		}
 	}
@@ -107,18 +108,16 @@ function colophoner(){
 					boxes[i].style.top = 0 + "vw";
 				}
 				boxes[i].style.background = "black";
-				console.log("im here!");
 			}
 		}
 	}
-
+	
+	//for numbers beyond 20, continue as below`
 	else if (colophon > 20){
-			//for numbers beyond 20, continue as below
 			do{
 				if(rDivs < rMax && colophon > 0){
 					rDivs++;
 					colophon--;
-
 				}
 
 				if(wDivs < wMax && colophon > 0){
@@ -129,7 +128,6 @@ function colophoner(){
 				if(eDivs < eMax && colophon > 0){
 					eDivs++;
 					colophon--;
-
 				}
 
 				if(dDivs < dMax && colophon > 0){
@@ -140,11 +138,11 @@ function colophoner(){
 				if(iDivs < iMax && colophon > 0){
 					iDivs++;
 					colophon--;
-
 				}
 
 			}while (colophon > 0);
 
+			console.log("This is the number of blocks in each letter:");
 			console.log("wDivs = " + wDivs + " and iDivs = " + iDivs + " and rDivs = " + rDivs + " and eDivs = " + eDivs + " and dDivs = " + dDivs);
 
 			//over here need to trigger splitDivs function like splitDivs(w,wDivs); for every letter
@@ -157,9 +155,10 @@ function colophoner(){
 	}
 }
 
-//letter --> chosen letter; toDivide --> number of blocks to break into
+//letter --> chosen letter
+//toDivide --> number of blocks to break into
 //identify number of boxes, identify max of each box, drawDivs from within
-//three-dimensional array --> e.g. for a letter wArray[0] = hor, 12??
+//two-dimensional array
 
 function splitDivs(letter, toDivide){
 	let twoDims = [];
