@@ -84,8 +84,8 @@ canvas.addEventListener('mouseup', mouseup);
 //create canvas
 function createCanvas() {
 	canvas.id = "canvas";
-	canvas.width = parseInt(document.getElementById("sizeX").value);
-	canvas.height = parseInt(document.getElementById("sizeY").value);
+	canvas.width = getCookie("wHeight") || parseInt(document.getElementById("sizeX").value);
+	canvas.height = getCookie("cHeight") || parseInt(document.getElementById("sizeY").value);
 	setCookie("cWidth", canvas.width, 999);
 	setCookie("cHeight", canvas.height, 999);
 	canvas.style.zIndex = 8;
